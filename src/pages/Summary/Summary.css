@@ -1,0 +1,111 @@
+.summaryHr,.summaryHr2 {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    black 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.summaryHr {
+  opacity: 15%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 2px;
+}
+.summaryHr2 {
+  opacity: 11%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 1px;
+}
+
+
+.summaryTotalInfo {
+  margin-top: 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  flex-direction: column;
+}
+.totalText {
+  color: hsl(231, 11%, 63%);
+  font-size: 15px;
+}
+.totalPrice {
+  color: hsl(243, 100%, 62%);
+  font-size: 37px;
+  font-family: "mainFont";
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+
+.summaryInfo {
+  background-color: hsl(0deg 0% 97.79%);
+  padding: 25px 25px 10px 25px;
+  border-radius: 8px;
+}
+.finalPlanInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.planSectionTitle {
+  font-family: "mainFont";
+  color: hsl(0deg 0% 64.71%);
+  font-size: 13px;
+}
+.planSelectedInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.finalPlanName {
+  font-family: "mainFont";
+  color: hsl(243, 100%, 62%);
+  font-size: 18px;
+}
+.changePlanButton {
+  font-size: 13px;
+  font-family: "lightFont";
+  margin-top: 3px;
+  color: hsl(0deg 0% 41.88%);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.changePlanButton:hover {
+  transform: scale(0.97);
+}
+.planFinalPrice {
+  font-family: "lightFont";
+  font-weight: 600;
+  color: hsl(213, 96%, 18%);
+  font-size: 18px;
+}
+
+
+.finalAddOnsInfo {
+  display: flex;
+  flex-direction: column;
+}
+.addOnSelectedInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.finalAddOnName {
+  font-family: "lightFont";
+  font-size: 14px;
+  color: hsl(0deg 0% 64.71%);
+}
+.addOnFinalPrice {
+  font-family: "lightFont";
+  font-weight: 600;
+  color: hsl(213, 96%, 18%);
+  font-size: 16px;
+}

@@ -1,0 +1,42 @@
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-family: "mainFont";
+  background-image: url(../../assets/images/bg-sidebar-desktop.svg);
+  color: white;
+  padding: 25px;
+  max-width: 232px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.sideBarStep {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+}
+.stepNumber {
+  border: 1px solid white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stepNumber.active {
+  background-color: hsl(206, 94%, 87%);
+  border: none;
+  color: black;
+}
+.stepInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.stepNumberText {
+  font-family: "lightFont";
+  font-size: 13px;
+  color: hsl(217, 100%, 97%);
+}

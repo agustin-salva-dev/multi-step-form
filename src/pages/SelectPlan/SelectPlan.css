@@ -1,0 +1,86 @@
+.selectPlanHeader {
+  margin-bottom: 65px;
+}
+.plans {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.plan {
+  height: 135px;
+  border-radius: 8px;
+  padding: 15px;
+  width: 100px;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  transition: all 0.3s ease;
+}
+.plan:hover {
+  border: 1px solid hsl(243, 100%, 62%);
+  transform: scale(0.95);
+}
+.plan.active {
+  background-color: hsl(217, 100%, 97%);
+  border: 1px solid hsl(243, 100%, 62%);
+}
+.plan img {
+  height: 45px;
+}
+.planInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.planTitle {
+  color: hsl(213, 96%, 18%);
+  font-family: "lightFont";
+  font-weight: 600;
+  font-size: 17px;
+}
+.planPrice {
+  font-family: "lightFont";
+  color: hsl(231, 11%, 63%);
+  font-size: 15px;
+}
+.planOffer {
+  font-family: 'lightFont';
+  color: hsl(213, 96%, 18%);
+  font-size: 13px;
+}
+
+.togglePlanButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.toggleCircleCont {
+  background-color: hsl(213, 96%, 18%);
+  width: 45px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+}
+.toggleCircle {
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.toggleCircle.monthly {
+    transform: translateX(0);
+  }
+  
+  .toggleCircle.yearly {
+    transform: translateX(28px);
+  }

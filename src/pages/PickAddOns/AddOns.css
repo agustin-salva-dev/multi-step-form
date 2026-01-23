@@ -1,0 +1,80 @@
+.addOnsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 45px;
+}
+.addOn {
+  display: flex;
+  flex-direction: row;
+  background: none;
+  border: 1px solid hsl(243, 100%, 62%);
+  height: 80px;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  gap: 25px;
+}
+.addOn.active {
+  background-color: hsl(217, 100%, 97%);
+  transform: scale(0.98);
+}
+.addOnInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.addOnTitle {
+  font-family: "lightFont";
+  font-weight: 600;
+  color: hsl(213, 96%, 18%);
+}
+.addOnDesc {
+  color: hsl(231, 11%, 63%);
+  font-family: "lightFont";
+  font-size: 15px;
+}
+.addOnPrice {
+  font-size: 16px;
+  color: hsl(243, 100%, 62%);
+  margin-left: auto;
+}
+
+.addOnCheck {
+  display: none;
+}
+
+.customCheckbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid hsl(243, 100%, 62%);
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.customCheckbox::after {
+  content: "";
+  width: 21px;
+  height: 16px;
+  background-image: url(../../assets/images/icon-checkmark.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.addOnCheck:checked + .customCheckbox::after {
+  transform: translate(-50%, -50%) scale(0.6);
+  opacity: 1;
+}
+
+.addOnCheck:checked + .customCheckbox {
+  background-color: hsl(243, 100%, 62%);
+}

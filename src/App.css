@@ -1,0 +1,37 @@
+.appMainDiv {
+  background-color: white;
+  height: 568px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  gap: 25px;
+  width: 890px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.stepPage {
+  padding: 30px 60px 15px 60px;
+  max-width: 536px;
+  width: 100%;
+}
+
+.formPage {
+  font-family: "mainFont";
+    height: 100%;
+    position: relative;
+}
+
+.formPageHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.formPageHeader h1 {
+  font-size: 31px;
+  color: hsl(213, 96%, 18%);
+}
+.formPageHeader p {
+  font-family: "lightFont";
+  color: hsl(231, 11%, 63%);
+  font-size: 15px;
+}

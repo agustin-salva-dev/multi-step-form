@@ -1,0 +1,36 @@
+.succesed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.succesedHeader {
+  align-items: center;
+  gap: 15px;
+}
+.succesedHeader p {
+  text-align: center;
+}
+
+@keyframes bounceAndRotate {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10px) rotate(40deg);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(-5px) rotate(-20deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.succesed img {
+  animation: bounceAndRotate 1s ease-out;
+  animation-iteration-count: 1;
+}

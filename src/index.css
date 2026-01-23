@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+body {
+    background-color: hsl(217, 100%, 97%);
+}
+@font-face {
+    font-family: 'mainFont';
+    src: url(./assets/fonts/Ubuntu-Medium.ttf);
+}
+@font-face {
+    font-family: 'lightFont';
+    src: url(./assets/fonts/Ubuntu-Regular.ttf);
+}

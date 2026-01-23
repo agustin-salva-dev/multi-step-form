@@ -1,0 +1,40 @@
+.formPage.personalInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.personalInfo form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+form fieldset label {
+  font-family: "mainFont";
+  font-size: 16px;
+  color: hsl(213, 96%, 18%);
+}
+form fieldset input {
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid hsl(229, 24%, 87%);
+  padding: 0px 15px 0px 15px;
+  font-family: 'lightFont';
+  color: hsl(213, 96%, 18%);
+  font-weight: 600;
+  font-size: 15px;
+}
+form fieldset input::placeholder {
+  color: hsl(231, 11%, 63%);
+  font-weight: 400;
+}
+form fieldset input:focus {
+  border: 1px solid hsl(243, 100%, 62%);
+  outline: none;
+}
